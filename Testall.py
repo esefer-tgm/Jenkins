@@ -83,6 +83,24 @@ class TestAllgemein(unittest.TestCase):
         b4 = self.b
         assert(self.b is b4)
 
+	def JenkinsTest1(self):
+        b4 = Bruch(3, 2)
+        assert(b4 == self.b)
+
+    def JenkinsTest2(self):
+        assert(self.b < self.b3)
+
+    def JenkinsTest3(self):
+        self.b3 = self.b3 * 2
+        assert(float(self.b3) == 4.0)
+
+    def JenkinsTest4(self):
+        self.b = self.b / self.b3
+        assert(float(self.b) != 1.5)
+
+    def JenkinsTest5(self):
+        self.b = self.b * Bruch(6)
+assert(float(self.b) == 9.0)
 
 class TestVergleich(unittest.TestCase):
 
