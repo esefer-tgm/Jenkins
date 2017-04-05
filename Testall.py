@@ -83,7 +83,7 @@ class TestAllgemein(unittest.TestCase):
         b4 = self.b
         assert(self.b is b4)
 
-	def JenkinsTest1(self):
+    def JenkinsTest1(self):
         b4 = Bruch(3, 2)
         assert(b4 == self.b)
 
