@@ -100,7 +100,7 @@ class TestAllgemein(unittest.TestCase):
 
     def JenkinsTest5(self):
         self.b = self.b * Bruch(6)
-assert(float(self.b) == 9.0)
+		assert(float(self.b) == 9.0)
 
 class TestVergleich(unittest.TestCase):
 
